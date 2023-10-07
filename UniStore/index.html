@@ -60,15 +60,16 @@
                 <a href="#akbar"
                     class="font-bold duration-100 transition-color hover:text-indigo-600">AKBAR</a>
                 <div class="flex flex-col block w-full font-medium border-t border-gray-200 md:hidden">
-                    <a href="#_"
-                        class="relative inline-block w-full px-5 py-3 text-sm leading-none text-center text-white bg-indigo-700 fold-bold">PROPOSAL</a>
+                    <button id="#btnProposal"
+                        class="relative inline-block w-full px-5 py-3 text-sm leading-none text-center text-white bg-indigo-700 fold-bold">
+                        PROPOSAL</button>
                 </div>
             </nav>
 
             <div
                 class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
-                <a href="#_"
-                    class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">PROPOSAL</a>
+                <button id="#btnProposal"
+                    class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">PROPOSAL</button>
                 <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block"
                     viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -129,8 +130,8 @@
             <div
                 class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
                 <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8">PROPOSAL PROJECT 3</h1>
-                <a href="#_"
-                    class="relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white bg-indigo-600 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0">PROPOSAL</a>
+                <button id="btnProposal"
+                    class="relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white bg-indigo-600 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0">PROPOSAL</button>
                 <!-- Integrates with section -->
                 <div class="flex-col hidden mt-12 sm:flex lg:mt-24"></div>
                 <svg class="absolute left-0 max-w-md mt-24 -ml-64 left-svg" viewBox="0 0 423 423"
@@ -322,19 +323,7 @@
         <div class="pt-4 pt-6 mt-10 text-center text-gray-500 border-t border-gray-100">© 2023 UniStore. Proposal Project 3.</div>
     </footer>
 
-    <!-- a little JS for the mobile nav button -->
-    <script>
-        if (document.getElementById('nav-mobile-btn')) {
-            document.getElementById('nav-mobile-btn').addEventListener('click', function () {
-                if (this.classList.contains('close')) {
-                    document.getElementById('nav').classList.add('hidden');
-                    this.classList.remove('close');
-                } else {
-                    document.getElementById('nav').classList.remove('hidden');
-                    this.classList.add('close');
-                }
-            });
-        }
-    </script>
+    <!-- JS -->
+    <script src="js.js"></script>
 </body>
 </html>
